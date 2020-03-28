@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CheckInformationFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Savej Khan"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/textMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textName"
+                android:text="9930303030"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativName">
+
+            <TextView
+                android:id="@+id/textBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Samsung"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/textModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textBrand"
+                android:text="J7"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/textGB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textModel"
+                android:text="32GB"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativfunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativBrand">
+
+            <TextView
+                android:id="@+id/textfunction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Function Problem :"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+            <CheckBox
+                android:id="@+id/chkOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textfunction"
+                android:text="Ok"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/chkNotOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/chkOk"
+                android:text="Not Ok"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></CheckBox>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativAccessories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativfunction">
+
+            <TextView
+                android:id="@+id/textAccessories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Accessories :"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+            <CheckBox
+                android:id="@+id/chkOkAccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textAccessories"
+                android:text="Ok"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/chkNotOkAccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/chkOkAccess"
+                android:text="Not Ok"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></CheckBox>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativCondition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativAccessories">
+
+            <TextView
+                android:id="@+id/textCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Condition :"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+            <CheckBox
+                android:id="@+id/chkOkCond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/textCondition"
+                android:text="Ok"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/chkNotOkCon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/chkOkCond"
+                android:text="Not Ok"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></CheckBox>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativCondition">
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Price :"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/Price"
+                android:text="35000/-"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativNewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativPrice">
+
+            <TextView
+                android:id="@+id/nPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="New Price :"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"></TextView>
+
+            <EditText
+                android:id="@+id/textNewPrice"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/nPrice"
+                android:text="36000/-"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"></EditText>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativNewPrice">
+
+            <Button
+                android:id="@+id/btnConfirmPick"
+                android:layout_width="150dp"
+                android:layout_margin="2dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Confirm Pick up"
+                android:textColor="@android:color/black"></Button>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="150dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnConfirmPick"
+                android:background="@color/colorPrimary"
+                android:text="Cancel"
+                android:textColor="@android:color/black"></Button>
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
